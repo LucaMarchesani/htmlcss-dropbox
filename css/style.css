@@ -81,23 +81,43 @@ figure.top-img{
 }
 
 section.buisness-plans{
+    background-color: orange;
     justify-content: center;
-    align-items: baseline;
+
 }
 
-div.container-plan{
+div.top-box{
     width: 65%;
-    background-color: whitesmoke;
-    position: relative;
-    justify-content: space-around;
+    height: 100rem;
+    background-color: red;
+}
+div.text{
+    padding-top: 7rem;
+    text-align: center;
 }
 
-article.plan{
-    margin-top: 15rem;
-    width: 12rem;
-    height: 30rem;
-    background-color: yellowgreen;
+.plans{
+    justify-content: center;
+    flex-wrap: wrap;
 }
+
+article.v-plan{
+    width: calc(65% / 3);
+    margin: 1.5rem;
+    height: 30rem;
+    background-color: yellow;
+}
+
+article.o-plan{
+    width: 76%;
+    height: 8rem;
+    background-color: yellow;
+}
+
+
+
+
+
 
 
 
