@@ -116,6 +116,7 @@ div.top-box{
 div.plan-title{
     margin: 0 auto;
     width: 87%;
+    width: 77%;
     height: 4rem;
 }
 
@@ -146,7 +147,6 @@ article.v-plan{
     padding: .5rem 1rem;
     justify-content: center;
     align-items: center;
-
 }
 
 i{
