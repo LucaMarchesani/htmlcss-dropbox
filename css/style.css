@@ -185,9 +185,6 @@ section.team{
     background-color: springgreen;
 }
 
-section.blocks{
-}
-
 div.block{
     border: 1px solid black;
     height: 340.933px;
@@ -236,7 +233,6 @@ div.block{
 
 .free{
     height: 15rem;
-    background-color: aqua;
 }
 
 .free>div{
@@ -249,7 +245,6 @@ div.block{
 
 .questions{
     height: 30rem;
-    background-color: violet;
 }
 
 .questions-tab{
@@ -262,6 +257,19 @@ div.block{
 footer{
     height: 25rem;
     background-color: black;
+}
+
+section.column{
+    margin: 0 auto;
+    width: 70vw;
+    height: 100%;
+}
+
+ul.col{
+    width: calc(100% / 3);
+    height: 100%;
+    border: 1px solid whitesmoke;
+
 }
 
 
