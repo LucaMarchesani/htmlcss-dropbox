@@ -18,30 +18,36 @@ body{
     border: none;
     color: #f5f5f5;
     background-color: #0061ff;
+    padding: .3rem .5rem;
+    font-size: .6rem;
 }
 
 /* HEADER */
 nav.navbar{
     height: 3.5rem;
-    background-color: tomato;
+    background-color: white;
     align-items: center;
 }
 
-div.logo{
-    height: 3rem;
-    width: 15%;
-    background-color: aquamarine;
-}
 
-div.top-links{
+
+div.nav-contents{
     justify-content: space-between;
-    width: 85%;
+    width: 100%;
 }
 
-.top-links>ul{
+li>img{
+    width: 90px;
+}
+
+.nav-contents>ul{
+    justify-content: space-around;
+    align-items: center;
     height: 3rem;
-    width: 25%;
-    background-color: aquamarine;
+    width: 28%;
+    list-style: none;
+    font-size: .6rem;
+    color: #808080;
 }
 
 /* MAIN */
@@ -49,95 +55,213 @@ section.top-main{
     height: 30rem;
     justify-content: center;
     align-items: flex-end;
-    background-color: blueviolet;
+    background-color: #b4d0e7;
 }
 
 .container{
     width: 65%;
-    height: 25rem;
-    background-color: whitesmoke;
+    height: 100%;
+    background-color: #b4d0e7;
     position: relative;
+}
+
+.container>h1{
+    margin-top: 4rem;
+    font-size: 3rem;
 }
 
 article.top-article{
     position: absolute;
     left: 0;
     bottom: 0;
-    width: 30%;
-    height: 20rem;
-    background-color: #0061ff;
+    width: 25%;
+    height: 55%;
+}
+
+.top-article>p{
+    font-size: .7rem;
+}
+
+.top-article>button{
+    margin-top: 1.5rem;
+    padding: .4rem .6rem;
+}
+
+.cancel{
+    margin: 1rem 0 1.5rem 0;
 }
 
 figure.top-img{
-    z-index: 1;
     position: absolute;
     right: 0;
-    top: 5rem;
+    top: 13.5rem;
     width: 70%;
-    height: 23rem;
-    background-color: cadetblue;
+    height: 65%;
+}
+
+.top-img{
+    background-image: url(../img/jumbo.png);
+    background-size: cover;
 }
 
 section.buisness-plans{
-
     justify-content: center;
-
 }
 
 div.top-box{
     width: 65%;
-    background-color: red;
     padding-top: 5.5rem;
 }
+
 div.plan-title{
     margin: 0 auto;
-    width: 76%;
+    width: 87%;
     height: 4rem;
-    background-color: whitesmoke;
+}
+
+.plan-title>h2{
+    margin-bottom: 1.5rem;
+}
+
+label{
+    font-size: .7rem;
 }
 
 .plans{
+    margin-top: 1.5rem;
     justify-content: center;
     flex-wrap: wrap;
 }
 
 article.v-plan{
-    width: calc(65% / 3);
+    width: calc(75% / 3);
     margin: 1.5rem;
-    height: 30rem;
-    background-color: yellow;
+    height: 38rem;
+    border: 1px solid lightgray;
+    
 }
+
+.plan-type{
+    font-size: .7rem;
+    padding: .5rem 1rem;
+    justify-content: center;
+    align-items: center;
+
+}
+
+i{
+    margin-right: 4px;
+}
+
+.divider{
+    border-bottom: 1px solid lightgray;
+}
+
+.plan-contents{
+    font-size: .6rem;
+    padding: 1rem;
+}
+
+.plan-contents>ul{
+    margin-top: 1rem;
+    list-style: none;
+}
+
+li{
+    margin-bottom: 1rem;
+}
+
+div.button-plan{
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.button-plan>button{
+    font-size: .7rem;
+    padding: .5rem 1rem;
+}
+
+button.contact{
+    padding: .5rem 3.4rem;
+}
+
+.points{
+    margin-top: 1rem;
+}
+
+.blue-check{
+    font-weight: bold;
+    color: blue;
+    margin-right: 5px;
+}
+
+strong{
+    color: black;
+}
+
+.plan-contents>p{
+    margin-top: 1rem;
+    color: grey;
+}
+
+
 
 article.o-plan{
-    width: 76%;
-    height: 8rem;
-    background-color: yellow;
+    width: 87%;
+    height: 10rem;
+    border: 1px solid lightgray;
 }
 
-section.parthner{
+.o-text{
     width: 65%;
+    padding: 1rem 0 .5rem 1rem;
+}
+
+.o-text>h6{
+    margin: .7rem 0 1.5rem;
+}
+
+.o-text>p{
+    font-size: .6rem;
+}
+
+.o-button{
+    padding-top: 1.5rem;
+    width: 35%;
+    text-align: center;
+}
+
+.o-button>button{
+    padding: .5rem 1.5rem;
+    font-size: .7rem;
+}
+
+
+section.parthner{
+    width: 75%;
     margin: 0 auto;
-    background-color: cadetblue;
     justify-content: center;
     padding-top: 7rem;
 }
 
 .parthner-box{
     width: 76%;
-    background-color: #f5f5f5;
 }
 
 
 .parthner-box>figure{
     width: 60%;
     height: 20rem;
-    background-color: violet;
+    background-image: url(../img/partner.png);
+    background-size: cover;
 }
 
 .parthner-box>article{
     width: 40%;
     height: 20rem;
-    background-color: tomato;
+    font-size: .7rem;
+    padding-left: 2rem;
 }
 
 section.cards{
@@ -150,14 +274,14 @@ section.cards{
 
 div.cards-title{
     margin: 0 auto;
-    width: 76%;
+    width: 88%;
     height: 3rem;
     background-color: whitesmoke;
 }
 
 div.cards-box{
     margin: 0 auto;
-    width: 76%;
+    width: 88%;
     justify-content: space-between;
     flex-wrap: wrap;
 }
@@ -165,8 +289,9 @@ div.cards-box{
 div.card{
     margin-top: 1.5rem;
     width: calc(90% / 3);
-    height: 11rem;
+    height: 15rem;
     background-color: green;
+    
 }
 
 section.team{
@@ -253,7 +378,7 @@ div.block{
     margin: 0 auto;
     background-color: tomato;
 }
-
+/* FOOTER */
 footer{
     height: 25rem;
     background-color: black;
