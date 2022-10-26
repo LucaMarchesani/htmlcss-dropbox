@@ -24,17 +24,15 @@ body{
 
 /* HEADER */
 nav.navbar{
-    height: 9vh;
+    height: 3rem;
     background-color: white;
-    align-items: center;
-
 }
 
 
 
 div.nav-contents{
-    justify-content: space-between;
     width: 100%;
+    justify-content: space-between;
 }
 
 li>img{
@@ -43,7 +41,6 @@ li>img{
 
 .nav-contents>ul{
     justify-content: space-around;
-    align-items: center;
     height: 3rem;
     width: 28%;
     list-style: none;
