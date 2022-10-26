@@ -6,6 +6,7 @@
 }
 
 body{
+    min-width: 1141.9px;
     font-family: 'Open Sans', sans-serif;
 }
 
@@ -25,6 +26,7 @@ body{
 /* HEADER */
 
 .navbar{
+    min-width: 1141.9px;
     width: 100vw;
     z-index: 3;
     position: fixed;
@@ -113,11 +115,13 @@ div.top-box{
     padding-top: 5.5rem;
 }
 
-div.plan-title{
+.top-box>.plan-title{
     margin: 0 auto;
-    width: 87%;
-    width: 77%;
-    height: 4rem;
+}
+
+div.plan-title{
+    width: 87.5%;
+    height: 5rem;
 }
 
 .plan-title>h2{
@@ -137,7 +141,7 @@ label{
 article.v-plan{
     width: calc(75% / 3);
     margin: 1.5rem;
-    height: 38rem;
+    height: 40rem;
     border: 1px solid lightgray;
 
 }
@@ -168,8 +172,14 @@ i{
     list-style: none;
 }
 
-li{
+.plan-contents ul>li{
     margin-bottom: 1rem;
+}
+
+.plan-contents>.divider{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    width: 20%;
 }
 
 div.button-plan{
@@ -209,7 +219,7 @@ strong{
 
 
 article.o-plan{
-    width: 87%;
+    width: 87.3%;
     height: 10rem;
     border: 1px solid lightgray;
 }
@@ -317,7 +327,7 @@ img.card-pic{
 
 section.team{
     margin: 0 auto;
-    width: 58%;
+    width: 57%;
     padding-top: 8rem;
     padding-bottom: 5rem;
 
@@ -455,13 +465,14 @@ div.block{
 }
 /* FOOTER */
 footer{
+    min-width: 1141.9px;
     height: 25rem;
     background-color: black;
 }
 
 section.column{
     margin: 0 auto;
-    width: 70vw;
+    width: 70%;
     height: 100%;
 }
 
@@ -476,6 +487,7 @@ ul.col{
 
 .col>li{
     font-size: .7rem;
+    margin-bottom: 1.5rem;
 }
 
 .col>li:first-child{
