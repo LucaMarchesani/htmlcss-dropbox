@@ -152,6 +152,7 @@ article.v-plan{
 
 i{
     margin-right: 4px;
+    margin-left: 4px;
 }
 
 .divider{
@@ -465,10 +466,32 @@ section.column{
 }
 
 ul.col{
+    padding-top: 4rem;
+    list-style: none;
+    color: white;
     width: calc(100% / 3);
     height: 100%;
-    border: 1px solid whitesmoke;
+    line-height: .5rem;
+}
 
+.col>li{
+    font-size: .7rem;
+}
+
+.col>li:first-child{
+    font-size: 1rem;
+    margin-bottom: 2.5rem;
+}
+
+li.divider{
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+    width: 50%;
+    color: grey;
+}
+
+li.country{
+    color: grey;
 }
 
 
