@@ -334,7 +334,6 @@ div.team-message{
 }
 
 div.block{
-    border: 1px solid black;
     height: 405.333px;
     width: calc(100% / 3);
     flex-wrap: wrap;
@@ -342,48 +341,40 @@ div.block{
 }
 
 .min-square{
+    position: relative;
     width: 50%;
     height: 50%;
 }
 
+.min-square>img{
+    width: 65%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    filter: invert(1);
+}
+
 .designit{
     background-color: #a2d39b;
-    background-image: url(../img/designit.svg);
-    background-size: 7rem;
-    background-repeat: no-repeat;
-    background-position: center;
 }
 
 .asu{
     background-color: #61082b;
-    background-image: url(../img/arizona_state_university.svg);
-    background-size: 7rem;
-    background-repeat: no-repeat;
-    background-position: center;
 }
 
 .uf{
     background-color: #0093ce;
-    background-image: url(../img/university_of_florida.svg);
-    background-size: 7rem;
-    background-repeat: no-repeat;
-    background-position: center;
 }
 
 .topps{
     background-color: #ff1c1c;
-    background-image: url(../img/topps.svg);
-    background-size: 7rem;
-    background-repeat: no-repeat;
-    background-position: center;
 }
 
 .big{
     position: relative;
     padding: 12rem 2rem;
     font-size: .7rem;
-
-
 }
 
 .big>p{
@@ -395,53 +386,48 @@ div.block{
     top: 2rem;
     left: 2rem;
     width: 60%;
-
-
 }
 
 .wbr{
     background-color: #d5001f;
-    background-image: url(../img/world_bicycle_relief.svg);
-    background-size: 7rem;
-    background-repeat: no-repeat;
-    background-position: center;
 }
 
 .hearts{
     background-color: #b4d0e7;
-    background-image: url(../img/hearst_corp.svg);
-    background-size: 7rem;
-    background-repeat: no-repeat;
-    background-position: center;
 }
 
 .lonley{
     background-color: #0d2481;
-    background-image: url(../img/lonely_planet.svg);
-    background-size: 7rem;
-    background-repeat: no-repeat;
-    background-position: center;
 }
 
 .clear{
     background-color: #ffd830;
-    background-image: url(../img/clear_channel.svg);
-    background-size: 7rem;
-    background-repeat: no-repeat;
-    background-position: center;
 }
 
 
-.free{
+.free-trial{
     height: 15rem;
+    background-color: #b4d0e7;
 }
 
-.free>div{
-    width: 65%;
+.free-trial.contents{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
     height: 100%;
     margin: 0 auto;
-    background-color: yellow;
+}
 
+.free-title{
+    width: 55%;
+    font-size: 1.1rem;
+    color: #61082b;
+}
+
+.free-trial.contents>button{
+    border: none;
+    padding: .5rem 2rem;
 }
 
 .questions{
