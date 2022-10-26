@@ -432,13 +432,25 @@ div.block{
 
 .questions{
     height: 30rem;
+    justify-content: center;
+    align-items: center;
+
 }
 
 .questions-tab{
-    width: 65%;
-    height: 100%;
     margin: 0 auto;
-    background-color: tomato;
+    line-height: 5rem;
+    font-size: 1.1rem;
+}
+
+.questions-tab>p{
+    font-size: .8rem;
+    font-weight: bold;
+    border-bottom: 1px solid black;
+}
+
+.questions-tab p>i{
+    margin-left: 5rem;
 }
 /* FOOTER */
 footer{
